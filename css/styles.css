@@ -3,6 +3,7 @@
         --background-color:#2F303A;
         --main-text-color: #212121;
         --secondary-text-color: #757575;
+        --main-icon-color: #AFB1B8;
     }
     html {
         line-height: 0;
@@ -258,7 +259,7 @@
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        color: #AFB1B8;
+        color: var(--main-icon-color);
         align-items: center;
         justify-content: center;
    }
@@ -269,11 +270,45 @@
    .social-link-icon {
         fill: currentColor;
    }
+    /*------------------------CLIENTS------------------------*/
+    .clients-list {
+        display: flex;
+    }
+    .client-list-item {
+        width: 170px;
+        height: 92px;
+    }
+    .client-list-item:not(:last-child) {
+        margin-right: 30px;
+    }
+    
+    .client-link {
+        display: inline-block;
+        width: 100%;
+        height:100%;
+        border: 1px solid var(--main-icon-color);
+        border-radius: 4px;
+        color: var(--main-icon-color);
+        padding: 16px 32px;
+    }
+    .client-link:hover, .client-link:focus {
+        border: 1px solid var(--accent-color);
+        color: var(--accent-color);
+    }
+    .client-logo {
+        fill: currentColor;
+    }
     /*------------------------FOOTER------------------------*/
    .footer {
        background-color: var(--background-color);
        padding-top: 60px;
        padding-bottom: 60px;
+   }
+   .footer-box {
+    display: flex;
+   }
+   .contacts-container {
+    margin-right: 70px;
    }
    .footer-logo {
         display: inline-block;
@@ -303,6 +338,18 @@
    .footer-email:hover, .footer-email:focus,
    .footer-tel:hover, .footer-tel:focus {
        color: var(--accent-color);
+   }
+   .join-caption {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+   }
+   .social-link.join-social-link {
+        color: #FFFFFF;
    }
   /*------------------------PORTFOLIO------------------------*/
     .filter-list {
